@@ -1,14 +1,18 @@
 {
   "name": "mogre",
   "version": "1.0.0",
-  "private": true,
+  "description": "Official website for Mogré Ceramiche",
+  "main": ".eleventy.js",
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "start": "npx @11ty/eleventy --serve"
   },
-  "dependencies": {
-    "nuxt": "^2.15.6"
+  "author": {
+    "name": "Michele Invernizzi",
+    "email": "Mitch90@users.noreply.github.com",
+    "url": "https://micheleinvernizzi.com/"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
   }
 }

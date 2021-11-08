@@ -1,0 +1,28 @@
+{
+  "locations": [
+    {
+      "place": "via dei Priori X"
+    },
+    {
+      "place": "via Sant'Agata X"
+    }
+  ],
+  "social_links": [
+    {
+      "name": "facebook",
+      "url": "#"
+    },
+    {
+      "name": "instagram",
+      "url": "#"
+    }
+  ],
+  "contacts": [
+    {
+      "item": "info@mogre.it"
+    },
+    {
+      "item": "+39 3666564485"
+    }
+  ]
+}

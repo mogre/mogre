@@ -1,0 +1,26 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+  {% include "partials/navigation.html" %}
+  <header tabindex="-1" id="contentStart">
+    <h1>{{ header.heading }}</h1>
+    <p>{{ header.text }}</p>
+    <a href="{{ header.button.url }}">{{ header.button.name }}</a>
+  </header>
+  <main>
+    <article>
+      <h2>Introduzione</h2>
+      <div>
+        <p>{{ contentArticle.firstText }}</p>
+        <img src="{{ contentArticle.firstImage }}" alt="{{ contentArticle.firstImageAlt }}">
+      </div>
+      <div>
+        <p>{{ contentArticle.secondText }}</p>
+        <img src="{{ contentArticle.secondImage }}" alt="{{ contentArticle.secondImageAlt }}">
+      </div>
+    </article>
+    <article>
+      <h2>Corsi</h2>
+      <a href="{{ coursesArticle.button.url }}">{{ coursesArticle.button.name }}</a>
+    </article>
+  </main>
+{% endblock %}

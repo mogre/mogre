@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "name": "Chi sono",
+      "url": "/about"
+    },
+    {
+      "name": "Galleria",
+      "url": "/galleria"
+    },
+    {
+      "name": "Corsi",
+      "url": "/corsi"
+    },
+    {
+      "name": "Sede",
+      "url": "/sede"
+    },
+    {
+      "name": "Contatti",
+      "url": "/contatti"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<a href="#contentStart">Vai al contenuto</a>
+<nav>
+  <ul>
+    <li>
+      <a href="/" {{ helpers.getLinkActiveState('/', page.url) | safe }}>{% include "partials/logo.svg" %}</a>
+    </li>
+    {% for item in navigation.items %}
+    <li>
+      <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.name }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

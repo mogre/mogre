@@ -1,0 +1,48 @@
+.home__header {
+  min-height: calc(100vh - (var(--logo-width) * .8 + var(--s3) * 2 + var(--s2) + var(--s1)));
+  padding-top: var(--s3);
+  padding-bottom: var(--s2);
+  background: linear-gradient(var(--color-light), transparent 15%, transparent 80%, var(--color-light)),
+              linear-gradient(90deg, var(--color-light), transparent, var(--color-light)),
+              100% 100% / cover no-repeat url('../images/home.jpg');
+}
+
+.home__header > h1 {
+  max-width: 14ch;
+}
+
+.home__header > p {
+  max-width: 25ch;
+}
+
+.home__intro {
+  --vertical-padding: var(--s4);
+  --grid-gutter: clamp(var(--s1), 8vw, 10rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 20rem));
+  min-height: 150vh;
+}
+
+.home__intro > :last-child {
+  align-self: end;
+}
+
+.home__intro .clipped-image {
+  aspect-ratio: 5 / 7;
+}
+
+.courses-wrapper {
+  --vertical-padding: var(--s4);
+}
+
+.courses-list {
+  --cluster-gutter: var(--s3);
+}
+
+.courses-list li {
+  --stack-space: var(--s0);
+  width: min(12rem, 100%);
+}
+
+.courses-list .clipped-image {
+  aspect-ratio: 5 / 7;
+}

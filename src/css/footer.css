@@ -1,0 +1,21 @@
+footer {
+  --vertical-padding: var(--s3);
+}
+
+footer h3 {
+  margin-bottom: var(--s1);
+}
+
+.footer__list-wrapper {
+  --cluster-gutter: var(--s2);
+}
+
+.footer__list-wrapper > * {
+  min-width: min(14rem, 100%);
+}
+
+.footer__list-wrapper > :first-child {
+  min-width: min(20rem, 100%);
+  margin-right: auto;
+  border-right: 1px solid currentColor;
+}

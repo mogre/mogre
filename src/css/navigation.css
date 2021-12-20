@@ -1,0 +1,29 @@
+.skip-link:not(:focus) {
+  -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  box-sizing: border-box;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  padding-top: var(--s3);
+  padding-bottom: var(--s1);
+}
+
+.navigation-list > :last-child {
+  gap: var(--s-2) var(--s4);
+}
+
+.navigation-list [data-active="active"] {
+  color: var(--color-primary);
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo svg {
+  max-width: var(--logo-width);
+}

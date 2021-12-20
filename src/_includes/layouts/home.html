@@ -1,26 +1,38 @@
 {% extends "layouts/base.html" %}
 {% block content %}
   {% include "partials/navigation.html" %}
-  <header tabindex="-1" id="contentStart">
-    <h1>{{ header.heading }}</h1>
-    <p>{{ header.text }}</p>
-    <a href="{{ header.button.url }}">{{ header.button.name }}</a>
+  <header tabindex="-1" id="contentStart" class="home__header center stack">
+    <h1 class="heading-larger fg-primary">{{ header.heading }}</h1>
+    <p class="pushed-down">{{ header.text }}</p>
+    <a href="{{ header.button.url | url }}" class="link--button">{{ header.button.name }}</a>
   </header>
   <main>
-    <article>
-      <h2>Introduzione</h2>
-      <div>
-        <p>{{ contentArticle.firstText }}</p>
-        <img src="{{ contentArticle.firstImage }}" alt="{{ contentArticle.firstImageAlt }}">
-      </div>
-      <div>
-        <p>{{ contentArticle.secondText }}</p>
-        <img src="{{ contentArticle.secondImage }}" alt="{{ contentArticle.secondImageAlt }}">
+    <article class="center">
+      <h2 class="text-assistive">Introduzione</h2>
+      <div class="home__intro grid padded">
+        <div class="stack">
+          <p>{{ contentArticle.firstText }}</p>
+          <img src="{{ contentArticle.firstImage | url }}" alt="{{ contentArticle.firstImageAlt }}" class="clipped-image" style="object-position: 75% 50%;">
+        </div>
+        <div class="stack">
+          <p>{{ contentArticle.secondText }}</p>
+          <img src="{{ contentArticle.secondImage | url }}" alt="{{ contentArticle.secondImageAlt }}" class="clipped-image">
+        </div>
       </div>
     </article>
-    <article>
-      <h2>Corsi</h2>
-      <a href="{{ coursesArticle.button.url }}">{{ coursesArticle.button.name }}</a>
+    <article class="courses-wrapper bg-gray padded">
+      <div class="stack center">
+        <h2 class="heading-larger">Corsi</h2>
+        <ul class="courses-list cluster" data-justify="center">
+          {% for course in corsi.list %}
+            <li class="stack">
+              <p class="heading text-centered">{{ course.title }}</p>
+              <img src="{{ course.image | url }}" alt="{{ course.imageAlt }}" class="clipped-image">
+            </li>
+          {% endfor %}
+        </ul>
+        <a href="{{ coursesArticle.button.url | url }}" class="link--button center">{{ coursesArticle.button.name }}</a>
+      </div>
     </article>
   </main>
 {% endblock %}

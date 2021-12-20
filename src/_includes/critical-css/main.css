@@ -1,3 +1,54 @@
-html {
-  font-family: 'HK Grotesk';
+:root {
+  /* colors */
+  --color-dark: #404543;
+  --color-gray: #F5F6F6;
+  --color-light: #FFFFFF;
+  --color-primary: #BE7749;
+  --color-primary-light: #C58C68;
+  /* measures */
+  --ratio: 1.4;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  /* layout */
+  --stack-space: var(--s2);
+  --outer-padding: var(--s1);
+  --cluster-gutter: var(--s0);
+  --sidebar-gutter: var(--s0);
+  --grid-gutter: var(--s0);
+  --vertical-padding: var(--s2);
+  /* specific spacing */
+  --width-limit: 1320px;
+  --logo-width: 6.5rem;
+  --justification: 60ch;
+
+  font-family: 'HK Grotesk', sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+p {
+  max-width: var(--justification);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
 }

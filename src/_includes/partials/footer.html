@@ -1,29 +1,31 @@
-<footer>
-  <div>
-    <h3>Mogré</h3>
-    <p>Perugia, Italy</p>
-    <ul>
-      {% for location in footer.locations %}
-        <li>{{ location.place }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div>
-    <h3>Segui su</h3>
-    <ul>
-      {% for link in footer.social_links %}
-        <li>
-          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.name }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div>
-    <h3>Contatti</h3>
-    <ul>
-      {% for contact in footer.contacts %}
-        <li>{{ contact.item }}</li>
-      {% endfor %}
-    </ul>
+<footer class="padded bg-primary fg-light">
+  <div class="footer__list-wrapper center cluster">
+    <div>
+      <h3>Mogré</h3>
+      <p>Perugia, Italy</p>
+      <ul>
+        {% for location in footer.locations %}
+          <li>{{ location.place }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3>Segui su</h3>
+      <ul>
+        {% for link in footer.social_links %}
+          <li>
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3>Contatti</h3>
+      <ul>
+        {% for contact in footer.contacts %}
+          <li>{{ contact.item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </footer>

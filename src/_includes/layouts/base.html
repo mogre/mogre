@@ -1,4 +1,10 @@
 {% set assetHash = global.random() %}
+{% set critical_css %}
+  {% include 'critical-css/reset.css' %}
+  {% include 'critical-css/main.css' %}
+  {% include 'critical-css/layout.css' %}
+  {% include 'critical-css/utilities.css' %}
+{% endset %}
 
 <!DOCTYPE html>
 <html lang="it">
@@ -8,9 +14,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ title }}</title>
     <!-- critical styles -->
-    <style>{% include 'critical-css/reset.css' %}</style>
-    <style>{% include 'critical-css/main.css' %}</style>
-    <link rel="stylesheet" href="/fonts/fonts.css?{{ assetHash }}">
+    {% if global.environment == "production" %}
+    <style>{{ critical_css | cssmin | safe }}</style>
+    {% else %}
+    <style>{{ critical_css | safe }}</style>
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/fonts/fonts.css?' + assetHash | url }}">
+    <link rel="stylesheet" href="{{ '/css/navigation.css?' + assetHash | url }}">
+    <link rel="stylesheet" href="{{ '/css/footer.css?' + assetHash | url }}">
+    {% if page.url === '/' %}
+    <link rel="stylesheet" href="{{ '/css/home.css?' + assetHash | url }}">
+    {% endif %}
   </head>
   <body>
     {% block content %}{% endblock %}

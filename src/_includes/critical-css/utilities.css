@@ -1,0 +1,116 @@
+/**
+ TOKENS
+*/
+
+/* colors */
+.fg-dark {
+  color: var(--color-dark);
+}
+
+.fg-light {
+  color: var(--color-light);
+}
+
+.fg-primary {
+  color: var(--color-primary);
+}
+
+.fg-primary-light {
+  color: var(--color-primary-light);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.bg-gray {
+  background-color: var(--color-gray);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+/* fonts */
+.heading {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.heading-larger {
+  font-size: 2.75rem;
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+.body-text {
+  font-size: 1rem;
+}
+
+.body-small {
+  font-size: var(--s-1);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+/* paddings */
+.padded {
+  padding-top: var(--vertical-padding);
+  padding-bottom: var(--vertical-padding);
+}
+
+/**
+ UTILITIES
+*/
+
+.text-assistive {
+  -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  box-sizing: border-box;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.link--button {
+  display: inline-block;
+  padding: var(--s-1) var(--s0);
+  font-size: var(--s-1);
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-transform: uppercase;
+}
+
+.link--button:hover {
+  text-decoration: none;
+  background-color: var(--color-primary-light);
+}
+
+.clipped-image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pushed-down {
+  margin-top: auto;
+}
+
+.pushed-right {
+  margin-left: auto;
+}

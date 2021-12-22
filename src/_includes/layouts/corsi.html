@@ -1,0 +1,34 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+  {% include "partials/navigation.html" %}
+  <header tabindex="-1" id="contentStart" class="corsi__header center stack">
+    <h1 class="heading-larger starting-element fg-primary">{{ header.heading | safe }}</h1>
+    <p>{{ header.text }}</p>
+  </header>
+  <main>
+    <article class="courses-wrapper stack center padded">
+      <h2 class="text-assistive">Lista corsi</h2>
+      <ul class="courses-list cluster" data-justify="center" data-content="Dettagli">
+        {% for course in corsi.list %}
+        <li class="stack">
+          <h3 class="heading text-centered">{{ course.title }}</h3>
+          <img src="{{ course.image | url }}" alt="{{ course.imageAlt }}" class="clipped-image">
+          <p>{{ course.description }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      <h3 class="body-text fg-primary">Modalità</h3>
+      <ul class="formats-list stack">
+        {% for format in formats %}
+        <li class="center">
+          <h4>{{ format.title }}</h4>
+          <p>{{ format.description }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="contact-text fg-primary">
+        <a href="/contatti/">Contattami</a> per prenotare o avere informazioni sulle attività in corso e in partenza.
+      </p>
+    </article>
+  </main>
+{% endblock %}

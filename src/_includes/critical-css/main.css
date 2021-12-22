@@ -25,10 +25,11 @@
   --sidebar-gutter: var(--s0);
   --grid-gutter: var(--s0);
   --vertical-padding: var(--s2);
+  --icon-gutter: .4em;
   /* specific spacing */
   --width-limit: 1320px;
   --logo-width: 6.5rem;
-  --justification: 60ch;
+  --justification: 50ch;
 
   font-family: 'HK Grotesk', sans-serif;
   font-size: 20px;
@@ -44,11 +45,40 @@ p {
 }
 
 a {
-  text-decoration: none;
-  color: var(--color-dark);
+  color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+  transition: text-decoration-thickness .2s, text-underline-offset .2s ease;
 }
 
 a:hover,
 a:focus {
-  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+header {
+  min-height: 45vh;
+}
+
+h3 {
+  font-size: var(--s0);
+}
+
+/* shared styles */
+.courses-wrapper {
+  --vertical-padding: var(--s4);
+}
+
+.courses-list {
+  --cluster-gutter: var(--s4);
+}
+
+.courses-list li {
+  --stack-space: var(--s0);
+  width: min(12rem, 100%);
+}
+
+.courses-list .clipped-image {
+  aspect-ratio: 5 / 7;
 }

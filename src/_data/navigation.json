@@ -2,23 +2,23 @@
   "items": [
     {
       "name": "Chi sono",
-      "url": "/about"
+      "url": "/about/"
     },
     {
-      "name": "Galleria",
-      "url": "/galleria"
+      "name": "Lavori",
+      "url": "/lavori/"
     },
     {
       "name": "Corsi",
-      "url": "/corsi"
+      "url": "/corsi/"
     },
     {
       "name": "Sede",
-      "url": "/sede"
+      "url": "/sede/"
     },
     {
       "name": "Contatti",
-      "url": "/contatti"
+      "url": "/contatti/"
     }
   ]
 }

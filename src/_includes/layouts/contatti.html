@@ -1,0 +1,25 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+  {% include "partials/navigation.html" %}
+  <main tabindex="-1" id="contentStart" class="starting-element">
+    <h1 class="text-assistive">{{ heading }}</h1>
+    <article class="stack center padded">
+      <p>{{ contactsContent.firstText }}</p>
+      <ul class="contact-list stack">
+        {% for contact in footer.contacts %}
+          <li class="fg-primary heading">
+            <a href="{{ contact.prefix }}{{ contact.item | replace(" ", "") }}" class="with-icon">{{ contact.item }}{% include "partials/external-link.svg" %}</a>
+          </li>
+        {% endfor %}
+      </ul>
+      <p>{{ contactsContent.secondText }}</p>
+      <ul class="contact-list stack">
+        {% for link in footer.social_links %}
+          <li class="fg-primary heading">
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="with-icon">{{ link.name }}{% include "partials/external-link.svg" %}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </article>
+  </main>
+{% endblock %}

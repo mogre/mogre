@@ -1,0 +1,48 @@
+nav {
+  color: var(--color-light);
+  text-shadow: 0 0 2px var(--color-dark);
+}
+
+li:not(.logo) > a[aria-current="page"] {
+  color: black;
+}
+
+.full-viewport {
+  height: 100vh;
+  position: relative;
+}
+
+header > h1 {
+  max-width: 8ch;
+}
+
+.header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+main {
+  --justification: 38ch;
+}
+
+main > :first-child {
+  padding-top: var(--s4);
+  padding-bottom: var(--s4);
+}
+
+main p:nth-of-type(2n) {
+  margin-left: clamp(var(--s0), 10vw, calc(var(--s4) * 2));
+}
+
+.section-image {
+  aspect-ratio: 8 / 5;
+}
+
+main > :last-child {
+  aspect-ratio: 8 / 5;
+  padding-bottom: var(--s-1);
+}

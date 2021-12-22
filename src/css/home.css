@@ -29,20 +29,3 @@
 .home__intro .clipped-image {
   aspect-ratio: 5 / 7;
 }
-
-.courses-wrapper {
-  --vertical-padding: var(--s4);
-}
-
-.courses-list {
-  --cluster-gutter: var(--s3);
-}
-
-.courses-list li {
-  --stack-space: var(--s0);
-  width: min(12rem, 100%);
-}
-
-.courses-list .clipped-image {
-  aspect-ratio: 5 / 7;
-}

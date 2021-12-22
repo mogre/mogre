@@ -24,6 +24,14 @@
     <link rel="stylesheet" href="{{ '/css/footer.css?' + assetHash | url }}">
     {% if page.url === '/' %}
     <link rel="stylesheet" href="{{ '/css/home.css?' + assetHash | url }}">
+    {% elif page.url === '/about/' %}
+    <link rel="stylesheet" href="{{ '/css/about.css?' + assetHash | url }}">
+    {% elif page.url === '/corsi/' %}
+    <link rel="stylesheet" href="{{ '/css/corsi.css?' + assetHash | url }}">
+    {% elif page.url === '/contatti/' %}
+    <link rel="stylesheet" href="{{ '/css/contatti.css?' + assetHash | url }}">
+    {% elif page.url === '/sede/' %}
+    <link rel="stylesheet" href="{{ '/css/sede.css?' + assetHash | url }}">
     {% endif %}
   </head>
   <body>

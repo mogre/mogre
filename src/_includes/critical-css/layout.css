@@ -21,7 +21,7 @@
   /* ↓ Remove padding from the width calculation */
   box-sizing: content-box;
   /* ↓ The maximum width is the maximum measure */
-  max-width: var(--width-limit, 60ch);
+  max-width: var(--width-limit);
   /* ↓ Only affect horizontal margins */
   margin-left: auto;
   margin-right: auto;
@@ -37,6 +37,10 @@
   flex-wrap: wrap;
   /* ↓ Set the space/gap */
   gap: var(--cluster-gutter);
+}
+
+[data-justify="spaced"] {
+  justify-content: space-between;
 }
 
 [data-justify="center"] {
@@ -73,4 +77,22 @@
 .grid {
   display: grid;
   grid-gap: var(--grid-gutter);
+}
+
+.icon {
+  height: 0.6em;
+  width: 0.6em;
+}
+
+.with-icon {
+  /* ↓ Set the `inline-flex` context,
+  which eliminates the word space */
+  display: inline-flex;
+  align-items: baseline;
+}
+
+.with-icon .icon {
+  /* ↓ Use the logical margin property
+  and a --space variable with a fallback */
+  margin-inline-start: var(--icon-gutter);
 }

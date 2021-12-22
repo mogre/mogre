@@ -1,0 +1,75 @@
+.corsi__header > h1 {
+  max-width: 8ch;
+}
+
+.corsi__header > p {
+  max-width: 40ch;
+}
+
+.courses-wrapper {
+  --details-offset: calc(12rem * 7 / 5 + var(--s3) * 2);
+  --fillet-height: 7rem;
+}
+
+.courses-list {
+  position: relative;
+}
+
+.courses-list::before {
+  content: "";
+  position: absolute;
+  top: var(--details-offset);
+  left: 0;
+  color: var(--color-primary);
+}
+
+.courses-list p {
+  margin-top: var(--s3);
+}
+
+.formats-list {
+  --stack-space: var(--s0);
+  position: relative;
+  width: 100%;
+}
+
+.formats-list li {
+  padding-left: 0;
+  padding-right: 0;
+  width: calc(min((12rem * 3 + var(--s4) * 2), 100%));
+}
+
+.contact-text a {
+  color: currentColor;
+  font-weight: 700;
+}
+
+@media (min-width: 576px) {
+  .courses-list::before {
+    content: attr(data-content);
+  }
+}
+
+@media (min-width: 1140px) {
+
+  .courses-list::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--details-offset) + var(--s3));
+    left: var(--s2);
+    width: 1px;
+    height: var(--fillet-height);
+    background-color: var(--color-primary);
+  }
+
+  .formats-list::after {
+    content: "";
+    position: absolute;
+    top: calc(var(--s-3));
+    left: var(--s2);
+    width: 1px;
+    height: var(--fillet-height);
+    background-color: var(--color-primary);
+  }
+
+}

@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+  <div class="full-viewport">
+    {% include "partials/navigation.html" %}
+    <header tabindex="-1" id="contentStart" class="center">
+      <h1 class="heading-larger starting-element fg-light">{{ header.title | safe }}</h1>
+      <img src="{{ header.image | url }}" alt="{{ header.imageAlt }}" class="header-image clipped-image">
+    </header>
+  </div>
+  <main>
+    <div class="center stack">
+      {% for paragraph in firstSection %}
+        <p>{{ paragraph | safe }}</p>
+      {% endfor %}
+      <img src="{{ firstImage | url }}" alt="{{ firstImageAlt }}" class="section-image clipped-image">
+      {% for paragraph in secondSection %}
+        <p>{{ paragraph | safe }}</p>
+      {% endfor %}
+    </div>
+    <img src="{{ secondImage | url }}" alt="{{ secondImageAlt }}" class="image-to-border clipped-image">
+  </main>
+{% endblock %}

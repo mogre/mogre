@@ -25,10 +25,10 @@
         <h2 class="heading-larger">Corsi</h2>
         <ul class="courses-list cluster" data-justify="center">
           {% for course in corsi.list %}
-            <li class="stack">
-              <p class="heading text-centered">{{ course.title }}</p>
-              <img src="{{ course.image | url }}" alt="{{ course.imageAlt }}" class="clipped-image">
-            </li>
+          <li class="stack">
+            <p class="heading text-centered">{{ course.title }}</p>
+            <img src="{{ course.image | url }}" alt="{{ course.imageAlt }}" class="clipped-image">
+          </li>
           {% endfor %}
         </ul>
         <a href="{{ coursesArticle.button.url | url }}" class="link--button center">{{ coursesArticle.button.name }}</a>

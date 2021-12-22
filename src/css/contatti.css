@@ -1,0 +1,7 @@
+.contact-list {
+  padding-inline-start: var(--s4);
+}
+
+.contact-list li {
+  --stack-space: var(--s-1);
+}

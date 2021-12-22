@@ -40,20 +40,21 @@
 }
 
 /* fonts */
+.heading-larger {
+  font-size: 2.75rem;
+  line-height: 1.15;
+  font-weight: 400;
+}
+
 .heading {
   font-size: 1.5rem;
   line-height: 1.2;
   font-weight: 400;
 }
 
-.heading-larger {
-  font-size: 2.75rem;
-  line-height: 1.15;
-  font-weight: 500;
-}
-
 .body-text {
   font-size: 1rem;
+  font-weight: 400;
 }
 
 .body-small {
@@ -94,10 +95,10 @@
   background-color: var(--color-primary);
   color: var(--color-light);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .link--button:hover {
-  text-decoration: none;
   background-color: var(--color-primary-light);
 }
 
@@ -113,4 +114,13 @@
 
 .pushed-right {
   margin-left: auto;
+}
+
+.starting-element {
+  margin-top: var(--s5);
+}
+
+.image-to-border {
+  padding-left: var(--s-1);
+  padding-right: var(--s-1);
 }

@@ -1,10 +1,14 @@
 {
   "locations": [
     {
-      "place": "via dei Priori X"
+      "place": "via dei Priori 26",
+      "image": "/images/DSC05070.jpg",
+      "imageAlt": ""
     },
     {
-      "place": "via Sant'Agata X"
+      "place": "via Sant'Agata 1",
+      "image": "/images/DSC05070.jpg",
+      "imageAlt": "Scorcio del laboratorio in via Sant'Agata, con le magnifiche volte medievali intonacate e le postazioni di lavoro per gli studenti in legno massello."
     }
   ],
   "social_links": [
@@ -19,9 +23,11 @@
   ],
   "contacts": [
     {
+      "prefix": "mailto:",
       "item": "info@mogre.it"
     },
     {
+      "prefix": "tel:",
       "item": "+39 3666564485"
     }
   ]

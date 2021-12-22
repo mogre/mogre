@@ -17,5 +17,10 @@ footer h3 {
 .footer__list-wrapper > :first-child {
   min-width: min(20rem, 100%);
   margin-right: auto;
-  border-right: 1px solid currentColor;
+}
+
+@media (min-width: 576px) {
+  .footer__list-wrapper > :first-child {
+    border-right: 1px solid currentColor;
+  }
 }

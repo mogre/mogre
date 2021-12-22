@@ -10,20 +10,22 @@
       </ul>
     </div>
     <div>
-      <h3>Segui su</h3>
+      <h3 class="body-text">Segui su</h3>
       <ul>
         {% for link in footer.social_links %}
           <li>
-            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.name }}</a>
+            <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer" class="with-icon">{{ link.name }}{% include "partials/external-link.svg" %}</a>
           </li>
         {% endfor %}
       </ul>
     </div>
     <div>
-      <h3>Contatti</h3>
+      <h3 class="body-text">Contatti</h3>
       <ul>
         {% for contact in footer.contacts %}
-          <li>{{ contact.item }}</li>
+          <li>
+            <a href="{{ contact.prefix }}{{ contact.item | replace(" ", "") }}" class="with-icon">{{ contact.item }}{% include "partials/external-link.svg" %}</a>
+          </li>
         {% endfor %}
       </ul>
     </div>

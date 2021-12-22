@@ -27,3 +27,9 @@ nav {
 .logo svg {
   max-width: var(--logo-width);
 }
+
+li:not(.logo) > a[aria-current="page"] {
+  color: var(--color-primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}

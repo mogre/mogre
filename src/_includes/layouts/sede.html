@@ -1,0 +1,35 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+  {% include "partials/navigation.html" %}
+  <main tabindex="-1" id="contentStart" class="starting-element">
+    <h1 class="text-assistive">{{ heading }}</h1>
+    <article class="stack center padded">
+      <p>{{ introText | safe }}</p>
+      <ul class="locations-wrapper grid">
+        {% for location in footer.locations %}
+          <li class="stack">
+            <p class="fg-primary heading-larger">in {{ location.place | replace(r/\s\d+/g, "") | replace("dei", "<br/>dei") | safe }}</p>
+            <img src="{{ location.image | url }}" alt="{{ location.imageAlt }}" class="clipped-image">
+          </li>
+        {% endfor %}
+      </ul>
+    </article>
+    <article class="well-wrapper center cluster padded" data-justify="spaced">
+      <div class="stack">
+        {% for paragraph in wellArticle.content %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+      <figure class="stack">
+        <img src="{{ wellArticle.image | url }}" alt="{{ wellArticle.imageAlt }}">
+        <figcaption>{{ wellArticle.caption }}</figcaption>
+      </figure>
+    </article>
+    <article class="stack">
+      <div class="quote-wrapper center">
+        <p class="fg-primary heading-larger quote">{{ quoteArticle.content }}</p>
+      </div>
+      <img src="{{ quoteArticle.image | url }}" alt="{{ quoteArticle.imageAlt }}" class="image-to-border quote-image">
+    </article>
+  </main>
+{% endblock %}

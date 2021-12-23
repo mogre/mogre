@@ -1,0 +1,260 @@
+{
+  "list": [
+    {
+      "image": "/images/IMG_9970.jpg",
+      "imageAlt": "",
+      "caption": "Tuffatrici",
+      "column": 1,
+      "row": 2,
+      "spaceBuffer": true
+    },
+    {
+      "image": "/images/DSC05696.jpg",
+      "imageAlt": "",
+      "caption": "",
+      "column": 2,
+      "row": 2,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC04806.jpg",
+      "imageAlt": "",
+      "caption": "Sul bordo",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC05636.jpg",
+      "imageAlt": "",
+      "caption": "Tuffatrice elegante",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC05709.jpg",
+      "imageAlt": "",
+      "caption": "Coppia",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC05028.jpg",
+      "imageAlt": "",
+      "caption": "Donna Natura",
+      "column": 1,
+      "row": 2,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/IMG_6392.jpg",
+      "imageAlt": "",
+      "caption": "",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/GVGV7828.jpg",
+      "imageAlt": "",
+      "caption": "",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC05651.jpg",
+      "imageAlt": "",
+      "caption": "Mater",
+      "column": 3,
+      "row": 3,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06098.jpg",
+      "imageAlt": "",
+      "caption": "Teiera tulipano",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06213.jpg",
+      "imageAlt": "",
+      "caption": "Teiera lunaria",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC05612.jpg",
+      "imageAlt": "",
+      "caption": "SALVAté",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06201.jpg",
+      "imageAlt": "",
+      "caption": "Teiera la bambina e l'uccellino",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06211.jpg",
+      "imageAlt": "",
+      "caption": "",
+      "column": 2,
+      "row": 2,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06074.jpg",
+      "imageAlt": "",
+      "caption": "Cocchine",
+      "column": 3,
+      "row": 3,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06077.jpg",
+      "imageAlt": "",
+      "caption": "",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06088.jpg",
+      "imageAlt": "",
+      "caption": "",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06080.jpg",
+      "imageAlt": "",
+      "caption": "",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06103.jpg",
+      "imageAlt": "",
+      "caption": "Tazze pastello",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06118.jpg",
+      "imageAlt": "",
+      "caption": "Tazze pastello",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06125.jpg",
+      "imageAlt": "",
+      "caption": "Tazza uccellino",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06134.jpg",
+      "imageAlt": "",
+      "caption": "Tazza e colino uccellino",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06138.jpg",
+      "imageAlt": "",
+      "caption": "",
+      "column": 2,
+      "row": 2,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06164.jpg",
+      "imageAlt": "",
+      "caption": "Tazze e piattino",
+      "column": 3,
+      "row": 3,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/ciotola_affresco.jpg",
+      "imageAlt": "",
+      "caption": "Ciotola Affresco",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06318.jpg",
+      "imageAlt": "",
+      "caption": "Ciotole bianche",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/ciotola_alta_bianca.jpg",
+      "imageAlt": "",
+      "caption": "Ciotola bianche",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/piatto_turchese_2.jpg",
+      "imageAlt": "",
+      "caption": "Piatto turchese",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06265.jpg",
+      "imageAlt": "",
+      "caption": "Piatto turchese e cucchiaio",
+      "column": 2,
+      "row": 2,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC06232.jpg",
+      "imageAlt": "",
+      "caption": "Orecchini Calder",
+      "column": 3,
+      "row": 3,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/P7140508.jpg",
+      "imageAlt": "",
+      "caption": "Donna con ventaglio e schizzo",
+      "column": 2,
+      "row": 2,
+      "spaceBuffer": false
+    },
+    {
+      "image": "/images/DSC05728.jpg",
+      "imageAlt": "",
+      "caption": "Donna con ventaglio",
+      "column": 1,
+      "row": 1,
+      "spaceBuffer": false
+    }
+  ]
+}

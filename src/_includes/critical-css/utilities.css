@@ -41,7 +41,7 @@
 
 /* fonts */
 .heading-larger {
-  font-size: 2.75rem;
+  font-size: clamp(2.25rem, 4vw, 2.75rem);
   line-height: 1.15;
   font-weight: 400;
 }
@@ -67,6 +67,11 @@
 
 .text-centered {
   text-align: center;
+}
+
+.quote {
+  max-width: 33ch;
+  font-size: clamp(1.7rem, 4vw, 2.75rem);
 }
 
 /* paddings */
@@ -99,7 +104,7 @@
 }
 
 .link--button:hover {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-dark);
 }
 
 .clipped-image {
@@ -118,6 +123,10 @@
 
 .starting-element {
   margin-top: var(--s5);
+}
+
+.starting-element-smaller {
+  margin-top: var(--s3);
 }
 
 .image-to-border {

@@ -1,0 +1,28 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+  {% include "partials/navigation.html" %}
+  <header tabindex="-1" id="contentStart">
+    <div class="starting-element cluster center">
+      <h1 class="heading-larger fg-primary">{{ header.title | safe }}</h1>
+      <div class="works-spacer bg-primary"></div>
+      <div class="stack">
+        <p>{{ header.text | safe }}</p>
+        <a href="{{ header.link.url }}" class="fg-primary">{{ header.link.text }}</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <article class="works-wrapper center padded">
+      {% for work in lavori.list %}
+        <figure class="stack" style="grid-row: span {{ work.row }}; grid-column: span {{ work.column }};">
+          <img src="{{ work.image | url }}" alt="{{ work.imageAlt }}" 
+            class="clipped-image {% if (work.row == 1 and work.column == 1) or work.spaceBuffer %}single-block{% endif %}"
+          >
+          {% if work.caption %}
+          <figcaption>{{ work.caption }}</figcaption>
+          {% endif %}
+        </figure>
+      {% endfor %}
+    </article>
+  </main>
+{% endblock %}

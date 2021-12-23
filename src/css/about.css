@@ -27,6 +27,7 @@ header > h1 {
 
 main {
   --justification: 38ch;
+  --stack-space: var(--s3);
 }
 
 main > :first-child {
@@ -40,6 +41,11 @@ main p:nth-of-type(2n) {
 
 .section-image {
   aspect-ratio: 8 / 5;
+}
+
+.quote {
+  max-width: 26ch;
+  margin-top: var(--s4);
 }
 
 main > :last-child {

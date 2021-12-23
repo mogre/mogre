@@ -7,30 +7,38 @@
 {% endset %}
 
 <!DOCTYPE html>
-<html lang="it">
+<html lang="{{ locale }}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ title }}</title>
+
+    <link rel="icon" href="{{ '/favicon.ico' | url }}" sizes="any">
+    <link rel="icon" href="{{ '/favicon.svg' | url }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | url }}">
+
     <!-- critical styles -->
     {% if global.environment == "production" %}
     <style>{{ critical_css | cssmin | safe }}</style>
     {% else %}
     <style>{{ critical_css | safe }}</style>
     {% endif %}
+
     <link rel="stylesheet" href="{{ '/fonts/fonts.css?' + assetHash | url }}">
     <link rel="stylesheet" href="{{ '/css/navigation.css?' + assetHash | url }}">
     <link rel="stylesheet" href="{{ '/css/footer.css?' + assetHash | url }}">
-    {% if page.url === '/' %}
+    {% if page.filePathStem.includes('index') %}
     <link rel="stylesheet" href="{{ '/css/home.css?' + assetHash | url }}">
-    {% elif page.url === '/about/' %}
+    {% elif page.filePathStem.includes('about') %}
     <link rel="stylesheet" href="{{ '/css/about.css?' + assetHash | url }}">
-    {% elif page.url === '/corsi/' %}
+    {% elif page.filePathStem.includes('lavori') %}
+    <link rel="stylesheet" href="{{ '/css/lavori.css?' + assetHash | url }}">
+    {% elif page.filePathStem.includes('corsi') %}
     <link rel="stylesheet" href="{{ '/css/corsi.css?' + assetHash | url }}">
-    {% elif page.url === '/contatti/' %}
+    {% elif page.filePathStem.includes('contatti') %}
     <link rel="stylesheet" href="{{ '/css/contatti.css?' + assetHash | url }}">
-    {% elif page.url === '/sede/' %}
+    {% elif page.filePathStem.includes('sede') %}
     <link rel="stylesheet" href="{{ '/css/sede.css?' + assetHash | url }}">
     {% endif %}
   </head>

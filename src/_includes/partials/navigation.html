@@ -1,13 +1,15 @@
+{% set localeBase = '/' + locale + '/' %}
+
 <a href="#contentStart" class="skip-link">Vai al contenuto</a>
 <nav class="center body-small">
   <ul class="navigation-list with-sidebar" data-align="center">
     <li class="logo">
-      <a href="{{ '/' | url }}" {{ helpers.getLinkActiveState('/', page.url) | safe }}>{% include "partials/logo.svg" %}</a>
+      <a href="{{ localeBase | url }}" {{ helpers.getLinkActiveState('/', page.url) | safe }}>{% include "partials/logo.svg" %}</a>
     </li>
     <div class="cluster" data-justify="end">
       {% for item in navigation.items %}
       <li class="uppercase">
-        <a href="{{ item.url | url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.name }}</a>
+        <a href="{{ item.url | replace('/', localeBase) | url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.name }}</a>
       </li>
       {% endfor %}
     </div>

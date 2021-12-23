@@ -15,4 +15,5 @@ secondSection:
   - "Questo ha cambiato l'approccio rispetto alla materia e al processo artistico: Mogré ricerca, crea ponti e comunica attraverso la sua sensibilità estetica."
 secondImage: "/images/articity_mogr_2135-1650x1650.jpg"
 secondImageAlt: "Monica pressa dei fiori su una lastra d'argilla."
+quote: "Il mio obiettivo è di creare ponti e comunicare in modo semplice e profondo con il mondo."
 ---

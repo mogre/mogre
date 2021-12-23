@@ -1,3 +1,7 @@
+.corsi__header {
+  --stack-space: var(--s4);
+}
+
 .corsi__header > h1 {
   max-width: 8ch;
 }
@@ -37,6 +41,10 @@
   padding-left: 0;
   padding-right: 0;
   width: calc(min((12rem * 3 + var(--s4) * 2), 100%));
+}
+
+.explanation-text {
+  margin-top: var(--s4);
 }
 
 .contact-text a {

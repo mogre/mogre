@@ -4,6 +4,10 @@ module.exports = config => {
     config.addPassthroughCopy('./src/css/');
     config.addPassthroughCopy('./src/fonts/');
     config.addPassthroughCopy('./src/images/');
+    // favicons
+    config.addPassthroughCopy('./src/*.png');
+    config.addPassthroughCopy('./src/*.svg');
+    config.addPassthroughCopy('./src/*.ico');
     
     return {
         // Tell eleventy to process templates with Nunjucks

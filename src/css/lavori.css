@@ -1,0 +1,45 @@
+header {
+  --justification: 40ch;
+  --cluster-gutter: var(--s4);
+}
+
+header h1 {
+  max-width: 8ch;
+}
+
+header a {
+  font-weight: 700;
+}
+
+.works-spacer {
+  display: none;
+}
+
+.works-wrapper > * + * {
+  margin-top: var(--s3);
+}
+
+.works-wrapper figure {
+  --stack-space: var(--s-2);
+}
+
+.single-block {
+  aspect-ratio: 7 / 5;
+}
+
+@media (min-width: 576px) {
+  .works-spacer {
+    display: initial;
+    width: clamp(var(--s0), 14vw, calc(var(--s5) * 2));
+    height: 1px;
+    margin-top: var(--s3);
+  }
+  .works-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: var(--s3) var(--s0);
+  }
+  .works-wrapper > * + * {
+    margin-top: 0;
+  }
+}

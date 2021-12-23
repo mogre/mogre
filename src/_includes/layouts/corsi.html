@@ -3,7 +3,7 @@
   {% include "partials/navigation.html" %}
   <header tabindex="-1" id="contentStart" class="corsi__header center stack">
     <h1 class="heading-larger starting-element fg-primary">{{ header.heading | safe }}</h1>
-    <p>{{ header.text }}</p>
+    <p>{{ header.firstText }}</p>
   </header>
   <main>
     <article class="courses-wrapper stack center padded">
@@ -26,8 +26,9 @@
         </li>
         {% endfor %}
       </ul>
+      <p class="explanation-text">{{ header.secondText }}</p>
       <p class="contact-text fg-primary">
-        <a href="/contatti/">Contattami</a> per prenotare o avere informazioni sulle attività in corso e in partenza.
+        <a href="{{ contact.link.url }}">{{ contact.link.text }}</a> {{ contact.text }}
       </p>
     </article>
   </main>

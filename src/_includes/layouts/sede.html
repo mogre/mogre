@@ -1,7 +1,7 @@
 {% extends "layouts/base.html" %}
 {% block content %}
   {% include "partials/navigation.html" %}
-  <main tabindex="-1" id="contentStart" class="starting-element">
+  <main tabindex="-1" id="contentStart" class="starting-element-smaller">
     <h1 class="text-assistive">{{ heading }}</h1>
     <article class="stack center padded">
       <p>{{ introText | safe }}</p>
@@ -9,7 +9,9 @@
         {% for location in footer.locations %}
           <li class="stack">
             <p class="fg-primary heading-larger">in {{ location.place | replace(r/\s\d+/g, "") | replace("dei", "<br/>dei") | safe }}</p>
-            <img src="{{ location.image | url }}" alt="{{ location.imageAlt }}" class="clipped-image">
+            <img src="{{ location.image | url }}" alt="{{ location.imageAlt }}" class="clipped-image"
+              {% if loop.first %}style="object-position: right center;"{% endif %}
+            >
           </li>
         {% endfor %}
       </ul>

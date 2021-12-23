@@ -65,6 +65,10 @@ h3 {
   font-size: var(--s0);
 }
 
+figcaption {
+  font-size: .8rem;
+}
+
 /* shared styles */
 .courses-wrapper {
   --vertical-padding: var(--s4);

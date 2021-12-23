@@ -16,6 +16,7 @@
       {% for paragraph in secondSection %}
         <p>{{ paragraph | safe }}</p>
       {% endfor %}
+      <p class="fg-primary heading-larger quote">{{ quote }}</p>
     </div>
     <img src="{{ secondImage | url }}" alt="{{ secondImageAlt }}" class="image-to-border clipped-image">
   </main>

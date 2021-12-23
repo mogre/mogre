@@ -20,7 +20,7 @@
 
     <!-- critical styles -->
     {% if global.environment == "production" %}
-    <style>{{ critical_css | cssmin | safe }}</style>
+    <style>{{ critical_css | safe }}</style>
     {% else %}
     <style>{{ critical_css | safe }}</style>
     {% endif %}

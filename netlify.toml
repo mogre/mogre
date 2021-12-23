@@ -6,9 +6,8 @@
 [[redirects]]
   from = "/"
   to = "/it/"
-  conditions = {Language = ["it"]}
+#  conditions = {Language = ["it"]}
 
-#[[redirects]]
-#  from = "/"
-#  to = "/en/"
-#  conditions = {Language = ["en"]}
+[[redirects]]
+  from = "/"
+  to = "/it/"

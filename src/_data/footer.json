@@ -2,12 +2,12 @@
   "locations": [
     {
       "place": "via dei Priori 26",
-      "image": "/images/articity_mogr_2714.jpg",
+      "image": "articity_mogr_2714.jpg",
       "imageAlt": "Monica Grelli seduta sugli scalini dell'entrata del suo negozio in via dei Priori"
     },
     {
       "place": "via Sant'Agata 1",
-      "image": "/images/DSC05070.jpg",
+      "image": "DSC05070.jpg",
       "imageAlt": "Scorcio del laboratorio in via Sant'Agata, con le magnifiche volte medievali intonacate e le postazioni di lavoro per gli studenti in legno massello."
     }
   ],

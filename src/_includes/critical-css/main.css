@@ -76,6 +76,7 @@ figcaption {
 
 .courses-list {
   --cluster-gutter: var(--s4);
+  width: 100%;
 }
 
 .courses-list li {

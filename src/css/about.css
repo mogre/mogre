@@ -48,7 +48,7 @@ main p:nth-of-type(2n) {
   margin-top: var(--s4);
 }
 
-main > :last-child {
+main > :last-child img {
   aspect-ratio: 8 / 5;
   padding-bottom: var(--s-1);
 }

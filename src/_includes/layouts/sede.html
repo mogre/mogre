@@ -9,9 +9,7 @@
         {% for location in footer.locations %}
           <li class="stack">
             <p class="fg-primary heading-larger">in {{ location.place | replace(r/\s\d+/g, "") | replace("dei", "<br/>dei") | safe }}</p>
-            <img src="{{ location.image | url }}" alt="{{ location.imageAlt }}" class="clipped-image"
-              {% if loop.first %}style="object-position: right center;"{% endif %}
-            >
+            {% image location.image, location.imageAlt, "(max-width: 576px) 600px, (max-width: 768px) 800px, (max-width: 1200px) 1200px, 1320px", "clipped-image", "object-position: right center;" if loop.first %}
           </li>
         {% endfor %}
       </ul>
@@ -23,7 +21,7 @@
         {% endfor %}
       </div>
       <figure class="stack">
-        <img src="{{ wellArticle.image | url }}" alt="{{ wellArticle.imageAlt }}">
+        {% image wellArticle.image, wellArticle.imageAlt, "21rem" %}
         <figcaption>{{ wellArticle.caption }}</figcaption>
       </figure>
     </article>
@@ -31,7 +29,7 @@
       <div class="quote-wrapper center">
         <p class="fg-primary heading-larger quote">{{ quoteArticle.content }}</p>
       </div>
-      <img src="{{ quoteArticle.image | url }}" alt="{{ quoteArticle.imageAlt }}" class="image-to-border quote-image">
+      {% image quoteArticle.image, quoteArticle.imageAlt, "(max-width: 576px) 600px, (max-width: 768px) 800px, (max-width: 1200px) 1200px, 100vw", "image-to-border quote-image" %}
     </article>
   </main>
 {% endblock %}

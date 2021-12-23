@@ -12,7 +12,7 @@
         {% for course in corsi.list %}
         <li class="stack">
           <h3 class="heading text-centered">{{ course.title }}</h3>
-          <img src="{{ course.image | url }}" alt="{{ course.imageAlt }}" class="clipped-image">
+          {% image course.image, course.imageAlt, "12rem", "clipped-image" %}
           <p>{{ course.description }}</p>
         </li>
         {% endfor %}

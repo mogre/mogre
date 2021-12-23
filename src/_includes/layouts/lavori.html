@@ -15,9 +15,11 @@
     <article class="works-wrapper center padded">
       {% for work in lavori.list %}
         <figure class="stack" style="grid-row: span {{ work.row }}; grid-column: span {{ work.column }};">
-          <img src="{{ work.image | url }}" alt="{{ work.imageAlt }}" 
-            class="clipped-image {% if (work.row == 1 and work.column == 1) or work.spaceBuffer %}single-block{% endif %}"
-          >
+          {% image 
+            work.image, 
+            work.imageAlt, 
+            "20rem" if (work.row == 1 and work.column == 1) or work.spaceBuffer else "(max-width: 576px) 600px, (max-width: 768px) 800px, (max-width: 1200px) 1200px, 1320px", 
+            "single-block clipped-image" if (work.row == 1 and work.column == 1) or work.spaceBuffer else "clipped-image" %}
           {% if work.caption %}
           <figcaption>{{ work.caption }}</figcaption>
           {% endif %}

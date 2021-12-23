@@ -5,6 +5,7 @@
     <h1 class="heading-larger fg-primary">{{ header.heading }}</h1>
     <p class="pushed-down">{{ header.text }}</p>
     <a href="{{ header.button.url | url }}" class="link--button">{{ header.button.name }}</a>
+    {% image header.image, header.imageAlt, "(max-width: 576px) 600px, (max-width: 768px) 800px, (max-width: 1200px) 1200px, 1320px", "clipped-image" %}
   </header>
   <main>
     <article class="center">
@@ -12,11 +13,11 @@
       <div class="home__intro grid padded">
         <div class="stack">
           <p>{{ contentArticle.firstText }}</p>
-          <img src="{{ contentArticle.firstImage | url }}" alt="{{ contentArticle.firstImageAlt }}" class="clipped-image" style="object-position: 75% 50%;">
+          {% image contentArticle.firstImage, contentArticle.firstImageAlt, "20rem", "clipped-image", "object-position: 75% 50%;" %}
         </div>
         <div class="stack">
           <p>{{ contentArticle.secondText }}</p>
-          <img src="{{ contentArticle.secondImage | url }}" alt="{{ contentArticle.secondImageAlt }}" class="clipped-image" style="object-position: 0% 50%;">
+          {% image contentArticle.secondImage, contentArticle.secondImageAlt, "20rem", "clipped-image", "object-position: 0% 50%;" %}
         </div>
       </div>
     </article>
@@ -27,7 +28,7 @@
           {% for course in corsi.list %}
           <li class="stack">
             <p class="heading text-centered">{{ course.title }}</p>
-            <img src="{{ course.image | url }}" alt="{{ course.imageAlt }}" class="clipped-image">
+            {% image course.image, course.imageAlt, "12rem", "clipped-image" %}
           </li>
           {% endfor %}
         </ul>

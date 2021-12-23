@@ -4,7 +4,7 @@
     {% include "partials/navigation.html" %}
     <header tabindex="-1" id="contentStart" class="center">
       <h1 class="heading-larger starting-element fg-light">{{ header.title | safe }}</h1>
-      <img src="{{ header.image | url }}" alt="{{ header.imageAlt }}" class="header-image clipped-image">
+      {% image header.image, header.imageAlt, "(max-width: 576px) 600px, (max-width: 768px) 800px, (max-width: 1200px) 1200px, 100vw", "header-image clipped-image" %}
     </header>
   </div>
   <main>
@@ -12,12 +12,12 @@
       {% for paragraph in firstSection %}
         <p>{{ paragraph | safe }}</p>
       {% endfor %}
-      <img src="{{ firstImage | url }}" alt="{{ firstImageAlt }}" class="section-image clipped-image">
+      {% image firstImage, firstImageAlt, "(max-width: 576px) 600px, (max-width: 768px) 800px, (max-width: 1200px) 1200px, 1320px", "section-image clipped-image" %}
       {% for paragraph in secondSection %}
         <p>{{ paragraph | safe }}</p>
       {% endfor %}
       <p class="fg-primary heading-larger quote">{{ quote }}</p>
     </div>
-    <img src="{{ secondImage | url }}" alt="{{ secondImageAlt }}" class="image-to-border clipped-image">
+    {% image secondImage, secondImageAlt, "(max-width: 576px) 600px, (max-width: 768px) 800px, (max-width: 1200px) 1200px, 100vw", "image-to-border clipped-image" %}
   </main>
 {% endblock %}

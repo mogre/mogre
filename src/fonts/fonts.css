@@ -2,22 +2,22 @@
   font-family: 'HK Grotesk';
   font-style: normal;
   font-weight: 400;
-  src:  url('HKGrotesk-Regular.woff2') format('woff2'),
-        url('HKGrotesk-Regular.woff') format('woff');
+  src:  url('./HKGrotesk-Regular.woff2') format('woff2'),
+        url('./HKGrotesk-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'HK Grotesk';
   font-style: normal;
   font-weight: 500;
-  src:  url('HKGrotesk-Medium.woff2') format('woff2'),
-        url('HKGrotesk-Medium.woff') format('woff');
+  src:  url('./HKGrotesk-Medium.woff2') format('woff2'),
+        url('./HKGrotesk-Medium.woff') format('woff');
 }
 
 @font-face {
   font-family: 'HK Grotesk';
   font-style: normal;
   font-weight: 700;
-  src:  url('HKGrotesk-Bold.woff2') format('woff2'),
-        url('HKGrotesk-Bold.woff') format('woff');
+  src:  url('./HKGrotesk-Bold.woff2') format('woff2'),
+        url('./HKGrotesk-Bold.woff') format('woff');
 }

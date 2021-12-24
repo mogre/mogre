@@ -2,7 +2,7 @@ const Image = require("@11ty/eleventy-img");
 
 async function imageShortcode(src, alt = "", sizes = "1320px", classes = "", styles = "") {
   let metadata = await Image(`./src/images/${src}`, {
-    widths: [200, 400, 800, 1200, 1600, null],
+    widths: [400, 800, 1200, 1600, null],
     formats: ["webp", "jpeg"],
     urlPath: "/images/",
     outputDir: "./dist/images/",
@@ -35,6 +35,7 @@ module.exports = config => {
   // config.addPassthroughCopy('./src/images/');
   // favicons
   config.addPassthroughCopy('./src/*.png');
+  config.addPassthroughCopy('./src/*.jpg');
   config.addPassthroughCopy('./src/*.svg');
   config.addPassthroughCopy('./src/*.ico');
 

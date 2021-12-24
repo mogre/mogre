@@ -1,4 +1,11 @@
 module.exports = {
+    absoluteUrl: "https://mogreceramiche.netlify.app",
+    it: {
+      meta: {
+        title: "Mogré Ceramiche",
+        description: "Laboratorio di arte, ceramica e arteterapia di Monica Grelli, in pieno centro storico di Perugia."
+      }
+    }, 
     /**
      * Returns a random hash
      *

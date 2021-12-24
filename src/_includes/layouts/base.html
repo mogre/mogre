@@ -5,6 +5,7 @@
   {% include 'critical-css/layout.css' %}
   {% include 'critical-css/utilities.css' %}
 {% endset %}
+{% set localUrl = global.absoluteUrl %}
 
 <!DOCTYPE html>
 <html lang="{{ locale }}">
@@ -13,6 +14,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ title }}</title>
+
+    <meta property="og:title" content="{{ global[locale].meta.title }}">
+    <meta property="og:type" content="webiste" />
+    <meta property="og:description" content="{{ global[locale].meta.description }}">
+    <meta property="og:image" content="{{ localUrl + '/social_image.jpg' }}">
+    <meta property="og:url" content="{{ localUrl + page.url }}">
+    <meta name="twitter:card" content="summary_large_image">
 
     <link rel="icon" href="{{ '/favicon.ico' | url }}" sizes="any">
     <link rel="icon" href="{{ '/favicon.svg' | url }}" type="image/svg+xml">

@@ -94,5 +94,6 @@
 .with-icon .icon {
   /* ↓ Use the logical margin property
   and a --space variable with a fallback */
-  margin-inline-start: var(--icon-gutter);
+  -webkit-margin-start: var(--icon-gutter);
+          margin-inline-start: var(--icon-gutter);
 }

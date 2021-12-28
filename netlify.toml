@@ -13,46 +13,28 @@
   to = "/it/"
 
 [[redirects]]
-  from = "/azienda*"
+  from = "/azienda.php"
   to = "/it/"
-  conditions = {Language = ["it"]}
 
 [[redirects]]
-  from = "/categorie1*"
+  from = "/contattaci.php"
   to = "/it/"
-  conditions = {Language = ["it"]}
 
 [[redirects]]
-  from = "/categorie2*"
+  from = "/professionale.php"
   to = "/it/"
-  conditions = {Language = ["it"]}
 
 [[redirects]]
-  from = "/contattaci*"
+  from = "/azienda.php"
   to = "/it/"
-  conditions = {Language = ["it"]}
+  query = {lan = ":lan"}
 
 [[redirects]]
-  from = "/home1*"
+  from = "/contattaci.php"
   to = "/it/"
-  conditions = {Language = ["it"]}
+  query = {lan = ":lan"}
 
 [[redirects]]
-  from = "/info*"
+  from = "/professionale.php"
   to = "/it/"
-  conditions = {Language = ["it"]}
-
-[[redirects]]
-  from = "/prodotto*"
-  to = "/it/"
-  conditions = {Language = ["it"]}
-
-[[redirects]]
-  from = "/professionale*"
-  to = "/it/"
-  conditions = {Language = ["it"]}
-
-[[redirects]]
-  from = "/rivenditori*"
-  to = "/it/"
-  conditions = {Language = ["it"]}
+  query = {lan = ":lan"}

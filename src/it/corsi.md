@@ -3,8 +3,9 @@ title: 'Mogré Ceramiche - Corsi'
 layout: 'layouts/corsi.html'
 header:
   heading: 'Corsi e percorsi'
-  firstText: 'Mogrè propone corsi di ceramica e arteterapia, individuali e di gruppo. I corsi sono aperti a tutti: ogni persona è diversa come diverso è il modo di avvicinarsi alla terra.'
-  secondText: 'I percorsi non si limitano a trasmettere conoscenze tecniche rispetto alla materia ma offrono la possibilità di sviluppare uno sguardo nuovo rispetto alla realtà e ai processi di trasformazione che accompagnano ogni atto creativo.'
+  firstText: 'Mogré propone corsi di ceramica che diventano percorsi di arteterapia, individuali e di gruppo.'
+  secondText: 'La tecnica trasmessa ai partecipanti fornisce loro nuovi punti di vista sulla realtà, nuove competenze e autonomia nel loro lavoro creativo. Il processo artistico diviene così metafora di un processo di crescita personale.'
+  thirdText: 'I corsi sono aperti a tutti e non servono competenze artistiche pregresse. Ogni persona è diversa come diverso è il modo di avvicinarsi alla terra.'
 formats:
   - 
     title: 'Sessioni di un giorno'

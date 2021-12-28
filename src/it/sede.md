@@ -2,7 +2,7 @@
 title: 'Mogré Ceramiche - Sede'
 layout: 'layouts/sede.html'
 heading: "La sede"
-introText: "L'atelier di ceramiche Mogrè ha la sua sede nel centro di Perugia, in due locali storici e adiacenti: in <strong>via Dei Priori lo spazio espositivo</strong> e in <strong>via Sant'Agata il laboratorio dove lavoro e conduco corsi</strong> di ceramica aperti a tutti."
+introText: "L'atelier di ceramiche Mogré ha la sua sede nel centro di Perugia, in due locali storici e adiacenti: in <strong>via Dei Priori lo spazio espositivo</strong> e in <strong>via Sant'Agata il laboratorio dove lavoro e conduco corsi</strong> di ceramica aperti a tutti."
 wellArticle:
     content:
         - "Il laboratorio, inoltre, è un luogo suggestivo, possiede infatti al suo interno un patrimonio architettonico in stile medioevale, valorizzato dalla presenza di un caratteristico pozzo Etrusco."

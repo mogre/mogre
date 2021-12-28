@@ -1,5 +1,5 @@
 .corsi__header {
-  --stack-space: var(--s4);
+  --stack-space: var(--s3);
 }
 
 .corsi__header > h1 {
@@ -7,7 +7,11 @@
 }
 
 .corsi__header > p {
-  max-width: 40ch;
+  max-width: 46ch;
+}
+
+.corsi__header > p:not(:first-of-type) {
+  margin-top: 0;
 }
 
 .courses-wrapper {

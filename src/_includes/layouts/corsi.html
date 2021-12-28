@@ -4,6 +4,7 @@
   <header tabindex="-1" id="contentStart" class="corsi__header center stack">
     <h1 class="heading-larger starting-element fg-primary">{{ header.heading | safe }}</h1>
     <p>{{ header.firstText }}</p>
+    <p>{{ header.secondText }}</p>
   </header>
   <main>
     <article class="courses-wrapper stack center padded">
@@ -26,7 +27,7 @@
         </li>
         {% endfor %}
       </ul>
-      <p class="explanation-text">{{ header.secondText }}</p>
+      <p class="explanation-text">{{ header.thirdText }}</p>
       <p class="contact-text fg-primary">
         <a href="{{ contact.link.url }}">{{ contact.link.text }}</a> {{ contact.text }}
       </p>

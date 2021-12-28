@@ -11,3 +11,48 @@
 [[redirects]]
   from = "/"
   to = "/it/"
+
+[[redirects]]
+  from = "/azienda"
+  to = "/it/"
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/categorie1"
+  to = "/it/"
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/categorie2"
+  to = "/it/"
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/contattaci"
+  to = "/it/"
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/home1"
+  to = "/it/"
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/info"
+  to = "/it/"
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/prodotto"
+  to = "/it/"
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/professionale"
+  to = "/it/"
+  conditions = {Language = ["it"]}
+
+[[redirects]]
+  from = "/rivenditori"
+  to = "/it/"
+  conditions = {Language = ["it"]}

@@ -1,5 +1,5 @@
 module.exports = {
-    absoluteUrl: "https://mogreceramiche.netlify.app",
+    absoluteUrl: "https://www.mogre.it",
     it: {
       meta: {
         title: "Mogré Ceramiche",
